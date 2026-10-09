@@ -204,7 +204,8 @@ footer{background:var(--night);color:var(--glow);text-align:center;padding:70px 
 footer .monogram{width:min(42vw,300px);margin-bottom:12px}
 footer .names2{font-style:italic;font-weight:300;font-size:clamp(2.4rem,8vw,3.6rem)}
 footer .eyebrow{color:rgba(243,217,177,.7);margin-top:8px;display:block}
-footer .made-by{font-family:var(--sans);font-size:.62rem;letter-spacing:.18em;color:rgba(243,217,177,.62);margin-top:34px}
+footer .made-by{display:inline-block;margin-top:34px}
+footer .made-by img{display:block;width:72px;height:auto}
 
 @media (prefers-reduced-motion:reduce){
   #hero .photo,.petal,.scroll{animation:none}
@@ -421,7 +422,9 @@ body.loaded .names .ch{animation:chr 1.5s cubic-bezier(.2,.7,.2,1) forwards;anim
   <img class="monogram" src="assets/images/monogram.png" alt="Isabelle and Julian monogram">
   <p class="names2">Isabelle &amp; Julian</p>
   <span class="eyebrow">03 · 14 · 2027</span>
-  <p class="made-by">Made by Gathered</p>
+  <a class="made-by" href="https://gatherdigi.vercel.app/" aria-label="Visit Gathered">
+    <img src="assets/images/gathered.png" alt="Gathered">
+  </a>
 </footer>
 
 <script>
